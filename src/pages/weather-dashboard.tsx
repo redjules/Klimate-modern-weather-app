@@ -12,6 +12,7 @@ import { HourlyTemperature } from "@/components/hourly-temperature";
 import { CurrentWeather } from "@/components/current-weather";
 import WeatherSkeleton from "@/components/loading-skeleton";
 import { WeatherDetails } from "@/components/weather-details";
+import { WeatherForecast } from "@/components/weather-forecast";
 
 export function WeatherDashboard() {
   const {
@@ -121,6 +122,7 @@ export function WeatherDashboard() {
         </div>
         <div>
           <WeatherDetails data={weatherQuery.data} />
+          <WeatherForecast data={forecastQuery.data} />
         </div>
       </div>
     </div>
