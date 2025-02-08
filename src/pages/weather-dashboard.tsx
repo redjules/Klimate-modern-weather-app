@@ -3,17 +3,15 @@ import {
   useReverseGeocodeQuery,
   useWeatherQuery,
 } from "@/hooks/use-weather";
-
+import { CurrentWeather } from "../components/current-weather";
 import { Alert, AlertDescription, AlertTitle } from "../components/ui/alert";
 import { Button } from "../components/ui/button";
 import { MapPin, AlertTriangle, RefreshCw } from "lucide-react";
 import { useGeolocation } from "@/hooks/use-geolocation";
-import { HourlyTemperature } from "@/components/hourly-temperature";
-import { CurrentWeather } from "@/components/current-weather";
-import WeatherSkeleton from "@/components/loading-skeleton";
-import { WeatherDetails } from "@/components/weather-details";
-import { WeatherForecast } from "@/components/weather-forecast";
-import FavoriteButton from "@/components/favorite-button";
+import { WeatherDetails } from "../components/weather-details";
+import { WeatherForecast } from "../components/weather-forecast";
+import { HourlyTemperature } from "../components/hourly-temperature";
+import WeatherSkeleton from "../components/loading-skeleton";
 import { FavoriteCities } from "@/components/favorite-cities";
 
 export function WeatherDashboard() {
@@ -123,7 +121,8 @@ export function WeatherDashboard() {
           />
           <HourlyTemperature data={forecastQuery.data} />
         </div>
-        <div>
+
+        <div className="grid gap-6 md:grid-cols-2 items-start">
           <WeatherDetails data={weatherQuery.data} />
           <WeatherForecast data={forecastQuery.data} />
         </div>
