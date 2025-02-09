@@ -1,6 +1,17 @@
 # Final app
 
+Website:
+
 https://klimate-modern-weather-app-7n2r.vercel.app/
+
+Photos:
+
+
+![Screenshot 2025-02-10 at 00 17 15](https://github.com/user-attachments/assets/a5b5b9b5-8d50-4799-a5db-476e39cf68f5)
+
+
+<img width="1392" alt="Screenshot 2025-02-10 at 00 16 05" src="https://github.com/user-attachments/assets/d84a7e82-179d-4976-843e-a7ac0965341b" />
+
 
 # Tech Stack
 
