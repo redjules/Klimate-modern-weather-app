@@ -1,5 +1,3 @@
-## Klimate - modern weather app
-
 # Final app
 
 https://klimate-modern-weather-app-7n2r.vercel.app/
